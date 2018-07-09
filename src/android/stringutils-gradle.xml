@@ -1,0 +1,4 @@
+
+dependencies {
+  compile 'com.github.ashwindmk:android_stringutils:0.1.0'
+}

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="plugman-stringutils" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>PlugmanStringUtils</name>
+
+    <js-module name="PlugmanStringUtils" src="www/PlugmanStringUtils.js">
+        <clobbers target="PlugmanStringUtils" />
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="PlugmanStringUtils">
+                <param name="android-package" value="plugman.stringutils.PlugmanStringUtils" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+        </config-file>
+        <source-file src="src/android/PlugmanStringUtils.java" target-dir="src/plugman/stringutils/PlugmanStringUtils" />
+        <framework custom="true" src="src/android/hypertrack-sdk.gradle" type="gradleReference" />
+    </platform>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="PlugmanStringUtils">
+                <param name="ios-package" value="PlugmanStringUtils" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/PlugmanStringUtils.m" />
+        <framework src="IOSStringUtils" type="podspec" spec="~> 0.1.1" />
+    </platform>
+
+</plugin>

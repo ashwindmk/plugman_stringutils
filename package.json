@@ -1,0 +1,19 @@
+{
+  "name": "plugman-stringutils",
+  "version": "0.1.0",
+  "description": "String utility cordova plugin using plugman",
+  "cordova": {
+    "id": "plugman-stringutils",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Ashwin",
+  "license": "ISC"
+}
