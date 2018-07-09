@@ -8,7 +8,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import ashwin.libraries.com.androidstringutils.StringUtils;
-import jdk.nashorn.api.scripting.JSObject;
 
 public class PlugmanStringUtils extends CordovaPlugin {
     @Override
