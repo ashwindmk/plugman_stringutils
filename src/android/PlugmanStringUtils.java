@@ -38,7 +38,7 @@ public class PlugmanStringUtils extends CordovaPlugin {
 
     private void isEmpty(String input, CallbackContext callbackContext) {
         try {
-            JSONbject result = new JSONObject();
+            JSONObject result = new JSONObject();
             result.put("result", StringUtils.isEmpty(input));
             callbackContext.success(result);
         } catch (Exception e) {
