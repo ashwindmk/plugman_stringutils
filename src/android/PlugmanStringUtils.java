@@ -29,7 +29,7 @@ public class PlugmanStringUtils extends CordovaPlugin {
         try {
             callbackContext.success(StringUtils.isBlank(input));
         } catch (Exception e) {
-            callbackContext.error("Exception occured: " + error);
+            callbackContext.error("Exception occured: " + e);
         }
     }
 
@@ -37,7 +37,7 @@ public class PlugmanStringUtils extends CordovaPlugin {
         try {
             callbackContext.success(StringUtils.isEmpty(input));
         } catch (Exception e) {
-            callbackContext.error("Exception occured: " + error);
+            callbackContext.error("Exception occured: " + e);
         }
     }
 }
