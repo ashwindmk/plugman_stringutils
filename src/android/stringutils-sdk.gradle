@@ -1,4 +1,12 @@
 
+allprojects {
+  repositories {
+    google()
+    jcenter()
+    maven { url 'https://jitpack.io' }
+  }
+}
+
 dependencies {
   compile 'com.github.ashwindmk:android_stringutils:0.1.0'
 }
