@@ -15,7 +15,7 @@
         <config-file parent="/*" target="AndroidManifest.xml">
         </config-file>
         <source-file src="src/android/PlugmanStringUtils.java" target-dir="src/plugman/stringutils/PlugmanStringUtils" />
-        <framework custom="true" src="src/android/hypertrack-sdk.gradle" type="gradleReference" />
+        <framework custom="true" src="src/android/stringutils-sdk.gradle" type="gradleReference" />
     </platform>
 
     <platform name="ios">
