@@ -1,14 +1,14 @@
 var exec = require('cordova/exec');
 
-modules.exports.test = function (success, error) {
+module.exports.test = function (success, error) {
     exec(success, error, 'PlugmanStringUtils', 'test', []);
 }
 
-modules.exports.isBlank = function (input, success, error) {
+module.exports.isBlank = function (input, success, error) {
     exec(success, error, 'PlugmanStringUtils', 'isBlank', [input]);
 };
 
-modules.exports.isEmpty = function (input, success, error) {
+module.exports.isEmpty = function (input, success, error) {
     exec(success, error, 'PlugmanStringUtils', 'isEmpty', [input]);
 };
 
