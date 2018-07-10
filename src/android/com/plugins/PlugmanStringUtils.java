@@ -1,8 +1,13 @@
-package plugman.stringutils;
+package com.plugins;
 
 import android.util.Log;
+import java.util.Locale;
 
 import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.PluginResult;
+
+import com.sun.glass.ui.MenuItem.Callback;
+
 import org.apache.cordova.CallbackContext;
 
 import org.json.JSONArray;
@@ -14,6 +19,11 @@ import ashwin.libraries.com.androidstringutils.StringUtils;
 public class PlugmanStringUtils extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+        if (action.equals("test")) {
+            String result = Locale.getDefault().getCountry();
+            callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, result));
+            return true;
+        }
         if (action.equals("isBlank")) {
             String input = args.getJSONObject(0).getString("input");
             this.isBlank(input, callbackContext);

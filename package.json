@@ -1,6 +1,6 @@
 {
   "name": "plugman-stringutils",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "String utility cordova plugin using plugman",
   "cordova": {
     "id": "plugman-stringutils",
@@ -8,6 +8,10 @@
       "android",
       "ios"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwindmk/plugman_stringutils.git"
   },
   "keywords": [
     "ecosystem:cordova",
