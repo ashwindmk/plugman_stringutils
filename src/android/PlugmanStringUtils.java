@@ -1,6 +1,5 @@
 package cordova.plugin.stringutils;
 
-import android.util.Log;
 import java.util.Locale;
 
 import org.apache.cordova.CordovaPlugin;
@@ -39,24 +38,16 @@ public class PlugmanStringUtils extends CordovaPlugin {
 
     private void isBlank(String input, CallbackContext callbackContext) {
         try {
-            Log.d("debug-logging", "checking if '" + input + "' is blank");
-            JSONObject result = new JSONObject();
-            result.put("result", StringUtils.isBlank(input));
-            callbackContext.success(result);
+            callbackContext.success(String.valueOf(StringUtils.isBlank(input)));
         } catch (Exception e) {
-            Log.e("debug-logging", "isEmpty() > exception: " + e, e);
             callbackContext.error("Exception occured: " + e);
         }
     }
 
     private void isEmpty(String input, CallbackContext callbackContext) {
         try {
-            Log.d("debug-logging", "checking if '" + input + "' is empty");
-            JSONObject result = new JSONObject();
-            result.put("result", StringUtils.isEmpty(input));
-            callbackContext.success(result);
+            callbackContext.success(String.valueOf(StringUtils.isEmpty(input)));
         } catch (Exception e) {
-            Log.e("debug-logging", "isEmpty() > exception: " + e, e);
             callbackContext.error("Exception occured: " + e);
         }
     }
