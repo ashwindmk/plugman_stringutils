@@ -1,4 +1,4 @@
-package com.plugins;
+package cordova.plugin.stringutils;
 
 import android.util.Log;
 import java.util.Locale;
@@ -61,3 +61,4 @@ public class PlugmanStringUtils extends CordovaPlugin {
         }
     }
 }
+
