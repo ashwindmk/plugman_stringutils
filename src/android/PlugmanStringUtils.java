@@ -5,8 +5,6 @@ import java.util.Locale;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
 
-import com.sun.glass.ui.MenuItem.Callback;
-
 import org.apache.cordova.CallbackContext;
 
 import org.json.JSONArray;
